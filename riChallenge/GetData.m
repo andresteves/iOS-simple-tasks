@@ -18,12 +18,13 @@
     NSURLSession *sessionData = [NSURLSession sessionWithConfiguration:sessionConfig];
     NSURLSessionDataTask *task = [sessionData dataTaskWithURL:[NSURL URLWithString:url]
             completionHandler:^(NSData *data, NSURLResponse *response, NSError *error){
-                [[self delegateResponse]didGetJsonResponse:data];
+                if (self.delegateResponse && [self.delegateResponse respondsToSelector:@selector(didGetJsonResponse:)]) {
+                    [self.delegateResponse didGetJsonResponse:data];
+                }
+                //[[self delegateResponse]didGetJsonResponse:data];
             }];
     [task resume];
 }
-
-
 
 - (void)getRibotar:(NSString *)memberId
 {

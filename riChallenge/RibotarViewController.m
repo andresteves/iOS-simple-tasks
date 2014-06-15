@@ -41,7 +41,12 @@
     return 1;
 }
 
-- (void)getJsonResponse:(NSData *)jsonResponse
+- (void)didGetMemberRibotar:(UIImage *)ribotar
+{
+    
+}
+
+- (void)didGetJsonResponse:(NSData *)jsonResponse
 {
     NSLog(@"getJsonResponse");
     NSError *error;
@@ -51,11 +56,6 @@
     {
         NSLog(@"Size : %d",[_receivedJSONData count]);
     }
-}
-
-- (void)getMemberRibotar:(UIImage *)ribotar
-{
-    
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
