@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MemberViewCell.h
 //  riChallenge
 //
 //  Created by Andre Esteves on 14/06/14.
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface MemberViewCell : UICollectionViewCell
+@property (strong, nonatomic) IBOutlet UIImageView *memberRibotar;
 
 @end
