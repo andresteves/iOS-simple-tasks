@@ -2,48 +2,29 @@
 //  RibotMember.m
 //  riChallenge
 //
-//  Created by Andre Esteves on 14/06/14.
+//  Created by Andre Esteves on 16/06/14.
 //  Copyright (c) 2014 Estevex. All rights reserved.
+//
+// Core Data was supposed to be used to persist some of the data from the API calls
 //
 
 #import "RibotMember.h"
 
-@interface RibotMember ()
-
-@end
 
 @implementation RibotMember
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+@dynamic firstName;
+@dynamic lastName;
+@dynamic location;
+@dynamic hexColor;
+@dynamic role;
+@dynamic memberDsc;
+@dynamic nickname;
+@dynamic twitterAcc;
+@dynamic email;
+@dynamic favSweet;
+@dynamic favSeason;
+@dynamic memberId;
+@dynamic ribotar;
 
 @end

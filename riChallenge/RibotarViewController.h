@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "GetData.h"
 #import "MemberViewCell.h"
+#import "MemberViewController.h"
 
-@interface RibotarViewController : UICollectionViewController <UICollectionViewDataSource,UICollectionViewDelegate,ResponseDataDelegate>
+@interface RibotarViewController : UICollectionViewController <UICollectionViewDataSource,UICollectionViewDelegate>
 
-@property (strong,nonatomic) NSArray *ribotars;
-@property (strong,nonatomic) NSDictionary *receivedJSONData;
+@property (strong,nonatomic) NSArray *receivedJSONData;
+@property (nonatomic,strong) GetData *getData;
 
 @end

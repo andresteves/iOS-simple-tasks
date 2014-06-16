@@ -21,11 +21,18 @@
 		D5E2F708194C8400008FB5E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E2F6E7194C8400008FB5E9 /* UIKit.framework */; };
 		D5E2F710194C8400008FB5E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5E2F70E194C8400008FB5E9 /* InfoPlist.strings */; };
 		D5E2F712194C8400008FB5E9 /* riChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2F711194C8400008FB5E9 /* riChallengeTests.m */; };
-		D5E2F71E194C8822008FB5E9 /* RibotMember.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2F71D194C8822008FB5E9 /* RibotMember.m */; };
-		D5E2F723194C88ED008FB5E9 /* RibotMemberTO.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2F722194C88ED008FB5E9 /* RibotMemberTO.m */; };
+		D5E2F71E194C8822008FB5E9 /* MemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2F71D194C8822008FB5E9 /* MemberViewController.m */; };
 		D5E2F726194C8913008FB5E9 /* GetData.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2F725194C8913008FB5E9 /* GetData.m */; };
 		D5E2F729194C8B40008FB5E9 /* RibotarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2F728194C8B40008FB5E9 /* RibotarViewController.m */; };
 		D5E2F72C194C8BE8008FB5E9 /* MemberViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2F72B194C8BE8008FB5E9 /* MemberViewCell.m */; };
+		D5E2F72E194F7988008FB5E9 /* user_not_found.png in Resources */ = {isa = PBXBuildFile; fileRef = D5E2F72D194F7988008FB5E9 /* user_not_found.png */; };
+		D5E2F730194F7C05008FB5E9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E2F72F194F7C05008FB5E9 /* QuartzCore.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D5E2F732194F7E03008FB5E9 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E2F731194F7E03008FB5E9 /* MessageUI.framework */; };
+		D5E2F734194F7EBB008FB5E9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E2F733194F7EBB008FB5E9 /* MapKit.framework */; };
+		D5E2F736194F7FEE008FB5E9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E2F735194F7FEE008FB5E9 /* CoreLocation.framework */; };
+		D5E2F738194F8C48008FB5E9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E2F737194F8C48008FB5E9 /* CoreData.framework */; };
+		D5E2F73B194F8D04008FB5E9 /* MemberElement.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D5E2F739194F8D04008FB5E9 /* MemberElement.xcdatamodeld */; };
+		D5E2F741194F9CD6008FB5E9 /* RibotMember.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2F740194F9CD6008FB5E9 /* RibotMember.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,16 +64,23 @@
 		D5E2F70D194C8400008FB5E9 /* riChallengeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "riChallengeTests-Info.plist"; sourceTree = "<group>"; };
 		D5E2F70F194C8400008FB5E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D5E2F711194C8400008FB5E9 /* riChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = riChallengeTests.m; sourceTree = "<group>"; };
-		D5E2F71C194C8822008FB5E9 /* RibotMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RibotMember.h; sourceTree = "<group>"; };
-		D5E2F71D194C8822008FB5E9 /* RibotMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RibotMember.m; sourceTree = "<group>"; };
-		D5E2F721194C88ED008FB5E9 /* RibotMemberTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RibotMemberTO.h; sourceTree = "<group>"; };
-		D5E2F722194C88ED008FB5E9 /* RibotMemberTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RibotMemberTO.m; sourceTree = "<group>"; };
+		D5E2F71C194C8822008FB5E9 /* MemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberViewController.h; sourceTree = "<group>"; };
+		D5E2F71D194C8822008FB5E9 /* MemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberViewController.m; sourceTree = "<group>"; };
 		D5E2F724194C8913008FB5E9 /* GetData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetData.h; sourceTree = "<group>"; };
 		D5E2F725194C8913008FB5E9 /* GetData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetData.m; sourceTree = "<group>"; };
 		D5E2F727194C8B40008FB5E9 /* RibotarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RibotarViewController.h; sourceTree = "<group>"; };
 		D5E2F728194C8B40008FB5E9 /* RibotarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RibotarViewController.m; sourceTree = "<group>"; };
 		D5E2F72A194C8BE8008FB5E9 /* MemberViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberViewCell.h; sourceTree = "<group>"; };
 		D5E2F72B194C8BE8008FB5E9 /* MemberViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberViewCell.m; sourceTree = "<group>"; };
+		D5E2F72D194F7988008FB5E9 /* user_not_found.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_not_found.png; sourceTree = "<group>"; };
+		D5E2F72F194F7C05008FB5E9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D5E2F731194F7E03008FB5E9 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		D5E2F733194F7EBB008FB5E9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D5E2F735194F7FEE008FB5E9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D5E2F737194F8C48008FB5E9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D5E2F73A194F8D04008FB5E9 /* MemberElement.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MemberElement.xcdatamodel; sourceTree = "<group>"; };
+		D5E2F73F194F9CD6008FB5E9 /* RibotMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RibotMember.h; sourceTree = "<group>"; };
+		D5E2F740194F9CD6008FB5E9 /* RibotMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RibotMember.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +88,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5E2F738194F8C48008FB5E9 /* CoreData.framework in Frameworks */,
+				D5E2F736194F7FEE008FB5E9 /* CoreLocation.framework in Frameworks */,
+				D5E2F734194F7EBB008FB5E9 /* MapKit.framework in Frameworks */,
+				D5E2F732194F7E03008FB5E9 /* MessageUI.framework in Frameworks */,
+				D5E2F730194F7C05008FB5E9 /* QuartzCore.framework in Frameworks */,
 				D5E2F6E6194C8400008FB5E9 /* CoreGraphics.framework in Frameworks */,
 				D5E2F6E8194C8400008FB5E9 /* UIKit.framework in Frameworks */,
 				D5E2F6E4194C8400008FB5E9 /* Foundation.framework in Frameworks */,
@@ -93,9 +112,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D53A4E87194EEBD4002F0E75 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D5E2F72D194F7988008FB5E9 /* user_not_found.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		D5E2F6D7194C8400008FB5E9 = {
 			isa = PBXGroup;
 			children = (
+				D5E2F739194F8D04008FB5E9 /* MemberElement.xcdatamodeld */,
 				D5E2F6E9194C8400008FB5E9 /* riChallenge */,
 				D5E2F70B194C8400008FB5E9 /* riChallengeTests */,
 				D5E2F6E2194C8400008FB5E9 /* Frameworks */,
@@ -115,6 +143,11 @@
 		D5E2F6E2194C8400008FB5E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D5E2F737194F8C48008FB5E9 /* CoreData.framework */,
+				D5E2F735194F7FEE008FB5E9 /* CoreLocation.framework */,
+				D5E2F733194F7EBB008FB5E9 /* MapKit.framework */,
+				D5E2F731194F7E03008FB5E9 /* MessageUI.framework */,
+				D5E2F72F194F7C05008FB5E9 /* QuartzCore.framework */,
 				D5E2F6E3194C8400008FB5E9 /* Foundation.framework */,
 				D5E2F6E5194C8400008FB5E9 /* CoreGraphics.framework */,
 				D5E2F6E7194C8400008FB5E9 /* UIKit.framework */,
@@ -126,7 +159,8 @@
 		D5E2F6E9194C8400008FB5E9 /* riChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				D5E2F720194C8893008FB5E9 /* Ribots */,
+				D53A4E87194EEBD4002F0E75 /* Images */,
+				D5E2F720194C8893008FB5E9 /* Model */,
 				D5E2F71F194C8887008FB5E9 /* Connections */,
 				D5E2F71B194C87D1008FB5E9 /* Views */,
 				D5E2F6F2194C8400008FB5E9 /* AppDelegate.h */,
@@ -171,8 +205,10 @@
 		D5E2F71B194C87D1008FB5E9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D5E2F71C194C8822008FB5E9 /* RibotMember.h */,
-				D5E2F71D194C8822008FB5E9 /* RibotMember.m */,
+				D5E2F72A194C8BE8008FB5E9 /* MemberViewCell.h */,
+				D5E2F72B194C8BE8008FB5E9 /* MemberViewCell.m */,
+				D5E2F71C194C8822008FB5E9 /* MemberViewController.h */,
+				D5E2F71D194C8822008FB5E9 /* MemberViewController.m */,
 				D5E2F727194C8B40008FB5E9 /* RibotarViewController.h */,
 				D5E2F728194C8B40008FB5E9 /* RibotarViewController.m */,
 			);
@@ -188,15 +224,13 @@
 			name = Connections;
 			sourceTree = "<group>";
 		};
-		D5E2F720194C8893008FB5E9 /* Ribots */ = {
+		D5E2F720194C8893008FB5E9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D5E2F721194C88ED008FB5E9 /* RibotMemberTO.h */,
-				D5E2F722194C88ED008FB5E9 /* RibotMemberTO.m */,
-				D5E2F72A194C8BE8008FB5E9 /* MemberViewCell.h */,
-				D5E2F72B194C8BE8008FB5E9 /* MemberViewCell.m */,
+				D5E2F73F194F9CD6008FB5E9 /* RibotMember.h */,
+				D5E2F740194F9CD6008FB5E9 /* RibotMember.m */,
 			);
-			name = Ribots;
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +280,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Estevex;
 				TargetAttributes = {
+					D5E2F6DF194C8400008FB5E9 = {
+						DevelopmentTeam = VM3EXX5756;
+					};
 					D5E2F703194C8400008FB5E9 = {
 						TestTargetID = D5E2F6DF194C8400008FB5E9;
 					};
@@ -278,6 +315,7 @@
 				D5E2F6FA194C8400008FB5E9 /* Main_iPad.storyboard in Resources */,
 				D5E2F6FF194C8400008FB5E9 /* Images.xcassets in Resources */,
 				D5E2F6F7194C8400008FB5E9 /* Main_iPhone.storyboard in Resources */,
+				D5E2F72E194F7988008FB5E9 /* user_not_found.png in Resources */,
 				D5E2F6EE194C8400008FB5E9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,10 +335,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5E2F741194F9CD6008FB5E9 /* RibotMember.m in Sources */,
 				D5E2F729194C8B40008FB5E9 /* RibotarViewController.m in Sources */,
 				D5E2F72C194C8BE8008FB5E9 /* MemberViewCell.m in Sources */,
-				D5E2F723194C88ED008FB5E9 /* RibotMemberTO.m in Sources */,
-				D5E2F71E194C8822008FB5E9 /* RibotMember.m in Sources */,
+				D5E2F71E194C8822008FB5E9 /* MemberViewController.m in Sources */,
+				D5E2F73B194F8D04008FB5E9 /* MemberElement.xcdatamodeld in Sources */,
 				D5E2F726194C8913008FB5E9 /* GetData.m in Sources */,
 				D5E2F6F4194C8400008FB5E9 /* AppDelegate.m in Sources */,
 				D5E2F6F0194C8400008FB5E9 /* main.m in Sources */,
@@ -443,6 +482,7 @@
 				GCC_PREFIX_HEADER = "riChallenge/riChallenge-Prefix.pch";
 				INFOPLIST_FILE = "riChallenge/riChallenge-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -457,6 +497,7 @@
 				GCC_PREFIX_HEADER = "riChallenge/riChallenge-Prefix.pch";
 				INFOPLIST_FILE = "riChallenge/riChallenge-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -520,6 +561,7 @@
 				D5E2F717194C8400008FB5E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5E2F718194C8400008FB5E9 /* Build configuration list for PBXNativeTarget "riChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -528,8 +570,22 @@
 				D5E2F71A194C8400008FB5E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D5E2F739194F8D04008FB5E9 /* MemberElement.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D5E2F73A194F8D04008FB5E9 /* MemberElement.xcdatamodel */,
+			);
+			currentVersion = D5E2F73A194F8D04008FB5E9 /* MemberElement.xcdatamodel */;
+			path = MemberElement.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D5E2F6D8194C8400008FB5E9 /* Project object */;
 }
