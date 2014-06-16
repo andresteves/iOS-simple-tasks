@@ -21,7 +21,7 @@
 
 @property (nonatomic,strong) id <ResponseDataDelegate> delegateResponse;
 
-- (void) getUrlData : (NSString*)url;
-- (void) getRibotar : (NSString*)memberId;
+- (void) getUrlData : (NSString*)url completionBlock:(void (^)(BOOL succeeded, NSData *jsonResponse))completionBlock;
+- (void) getRibotar : (NSString*)memberId completionBlock:(void (^)(BOOL succeeded, UIImage *image))completionBlock;
 - (NSURLSessionConfiguration*) createURLSessionConfiguration;
 @end

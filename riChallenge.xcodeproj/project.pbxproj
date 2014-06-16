@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D53A4E89194EEBEC002F0E75 /* user_not_found.png in Resources */ = {isa = PBXBuildFile; fileRef = D53A4E88194EEBEC002F0E75 /* user_not_found.png */; };
 		D5E2F6E4194C8400008FB5E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E2F6E3194C8400008FB5E9 /* Foundation.framework */; };
 		D5E2F6E6194C8400008FB5E9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E2F6E5194C8400008FB5E9 /* CoreGraphics.framework */; };
 		D5E2F6E8194C8400008FB5E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E2F6E7194C8400008FB5E9 /* UIKit.framework */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D53A4E88194EEBEC002F0E75 /* user_not_found.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user_not_found.png; path = ../../../user_not_found.png; sourceTree = "<group>"; };
 		D5E2F6E0194C8400008FB5E9 /* riChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = riChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E2F6E3194C8400008FB5E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D5E2F6E5194C8400008FB5E9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -93,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D53A4E87194EEBD4002F0E75 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D53A4E88194EEBEC002F0E75 /* user_not_found.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		D5E2F6D7194C8400008FB5E9 = {
 			isa = PBXGroup;
 			children = (
@@ -126,7 +136,8 @@
 		D5E2F6E9194C8400008FB5E9 /* riChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				D5E2F720194C8893008FB5E9 /* Ribots */,
+				D53A4E87194EEBD4002F0E75 /* Images */,
+				D5E2F720194C8893008FB5E9 /* Model */,
 				D5E2F71F194C8887008FB5E9 /* Connections */,
 				D5E2F71B194C87D1008FB5E9 /* Views */,
 				D5E2F6F2194C8400008FB5E9 /* AppDelegate.h */,
@@ -171,6 +182,8 @@
 		D5E2F71B194C87D1008FB5E9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D5E2F72A194C8BE8008FB5E9 /* MemberViewCell.h */,
+				D5E2F72B194C8BE8008FB5E9 /* MemberViewCell.m */,
 				D5E2F71C194C8822008FB5E9 /* RibotMember.h */,
 				D5E2F71D194C8822008FB5E9 /* RibotMember.m */,
 				D5E2F727194C8B40008FB5E9 /* RibotarViewController.h */,
@@ -188,15 +201,13 @@
 			name = Connections;
 			sourceTree = "<group>";
 		};
-		D5E2F720194C8893008FB5E9 /* Ribots */ = {
+		D5E2F720194C8893008FB5E9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				D5E2F721194C88ED008FB5E9 /* RibotMemberTO.h */,
 				D5E2F722194C88ED008FB5E9 /* RibotMemberTO.m */,
-				D5E2F72A194C8BE8008FB5E9 /* MemberViewCell.h */,
-				D5E2F72B194C8BE8008FB5E9 /* MemberViewCell.m */,
 			);
-			name = Ribots;
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +257,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Estevex;
 				TargetAttributes = {
+					D5E2F6DF194C8400008FB5E9 = {
+						DevelopmentTeam = VM3EXX5756;
+					};
 					D5E2F703194C8400008FB5E9 = {
 						TestTargetID = D5E2F6DF194C8400008FB5E9;
 					};
@@ -277,6 +291,7 @@
 			files = (
 				D5E2F6FA194C8400008FB5E9 /* Main_iPad.storyboard in Resources */,
 				D5E2F6FF194C8400008FB5E9 /* Images.xcassets in Resources */,
+				D53A4E89194EEBEC002F0E75 /* user_not_found.png in Resources */,
 				D5E2F6F7194C8400008FB5E9 /* Main_iPhone.storyboard in Resources */,
 				D5E2F6EE194C8400008FB5E9 /* InfoPlist.strings in Resources */,
 			);
@@ -443,6 +458,7 @@
 				GCC_PREFIX_HEADER = "riChallenge/riChallenge-Prefix.pch";
 				INFOPLIST_FILE = "riChallenge/riChallenge-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -457,6 +473,7 @@
 				GCC_PREFIX_HEADER = "riChallenge/riChallenge-Prefix.pch";
 				INFOPLIST_FILE = "riChallenge/riChallenge-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -520,6 +537,7 @@
 				D5E2F717194C8400008FB5E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5E2F718194C8400008FB5E9 /* Build configuration list for PBXNativeTarget "riChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +546,7 @@
 				D5E2F71A194C8400008FB5E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

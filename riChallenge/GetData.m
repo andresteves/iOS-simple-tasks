@@ -12,20 +12,27 @@
 
 @synthesize delegateResponse;
 
-- (void)getUrlData:(NSString *)url
+- (void)getUrlData:(NSString *)url completionBlock:(void (^)(BOOL succeeded, NSData *jsonResponse))completionBlock
 {
     NSURLSessionConfiguration *sessionConfig = [self createURLSessionConfiguration];
     NSURLSession *sessionData = [NSURLSession sessionWithConfiguration:sessionConfig];
     NSURLSessionDataTask *task = [sessionData dataTaskWithURL:[NSURL URLWithString:url]
             completionHandler:^(NSData *data, NSURLResponse *response, NSError *error){
-                [[self delegateResponse]didGetJsonResponse:data];
+            //[[self delegateResponse]didGetJsonResponse:data];
+                NSHTTPURLResponse *httpResp = (NSHTTPURLResponse*) response;
+                if(httpResp.statusCode/100 == 2)
+                {
+                    completionBlock(YES,data);
+                }else{
+                    completionBlock(NO,nil);
+                }
             }];
     [task resume];
 }
 
 
 
-- (void)getRibotar:(NSString *)memberId
+- (void)getRibotar:(NSString *)memberId completionBlock:(void (^)(BOOL succeeded, UIImage *image))completionBlock
 {
     NSString *url = [NSString stringWithFormat:@"http://devchallenge.ribot.io/api/team/%@/ribotar",memberId];
     
@@ -40,8 +47,9 @@
                 UIImage *downloadedImage =
                     [UIImage imageWithData:
                      [NSData dataWithContentsOfURL:location]];
-                
-                [[self delegateResponse] didGetMemberRibotar:downloadedImage];
+                completionBlock(YES,downloadedImage);
+            }else{
+                completionBlock(NO,nil);
             }
         }];
     
@@ -56,7 +64,9 @@
     [sessionConfig setHTTPAdditionalHeaders:
      @{@"Accept": @"application/json"}];
     
-    // 3
+    
+    sessionConfig.URLCache = [NSURLCache sharedURLCache];
+    sessionConfig.requestCachePolicy = NSURLRequestReturnCacheDataElseLoad;
     sessionConfig.timeoutIntervalForRequest = 30.0;
     sessionConfig.timeoutIntervalForResource = 60.0;
     sessionConfig.HTTPMaximumConnectionsPerHost = 1;
