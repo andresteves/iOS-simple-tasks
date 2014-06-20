@@ -28,6 +28,7 @@
     [super viewDidLoad];
     
     _getData = [[GetData alloc] init];
+    self.ColorView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
     
     //custom Email Button Border
     self.emailButton.layer.borderWidth = 0.9f;
@@ -100,6 +101,8 @@
                 _memberFavSeason.text  =[NSString stringWithFormat:@"Favourite Season : %@",[member objectForKey:@"favSeason"]];
                 
                 _email = [NSString stringWithFormat:@"%@",[member objectForKey:@"email"]];
+                
+                [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
             }
             
         }];

@@ -34,12 +34,12 @@
     [_getData getUrlData:@"http://devchallenge.ribot.io/api/team/" completionBlock:^(BOOL success,NSData *jsonResponse){
         NSError *error;
         _receivedJSONData = (NSArray*)[NSJSONSerialization JSONObjectWithData:jsonResponse options:0 error:&error];
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.collectionView reloadData];
-            [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-        });
     }];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.collectionView reloadData];
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+    });
     
 }
 
