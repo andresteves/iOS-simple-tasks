@@ -10,8 +10,6 @@
 
 @implementation GetData
 
-@synthesize delegateResponse;
-
 - (void)getUrlData:(NSString *)url completionBlock:(void (^)(BOOL succeeded, NSData *jsonResponse))completionBlock
 {
     NSURLSessionConfiguration *sessionConfig = [self createURLSessionConfiguration];
@@ -29,30 +27,6 @@
     [task resume];
 }
 
-
-- (void)getRibotar:(NSString *)memberId completionBlock:(void (^)(BOOL succeeded, UIImage *image))completionBlock
-{
-    NSString *url = [NSString stringWithFormat:@"http://devchallenge.ribot.io/api/team/%@/ribotar",memberId];
-    
-    NSURLSessionConfiguration *sessionConfig = [self createURLSessionConfiguration];
-    
-    NSURLSession *sessionData = [NSURLSession sessionWithConfiguration:sessionConfig];
-    
-    NSURLSessionDownloadTask *ribotar = [sessionData downloadTaskWithURL:[NSURL URLWithString:url] completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error){
-            NSHTTPURLResponse *httpResp = (NSHTTPURLResponse*) response;
-            if(httpResp.statusCode/100 == 2)
-            {
-                UIImage *downloadedImage =
-                    [UIImage imageWithData:
-                     [NSData dataWithContentsOfURL:location]];
-                completionBlock(YES,downloadedImage);
-            }else{
-                completionBlock(NO,nil);
-            }
-        }];
-    
-    [ribotar resume];
-}
 
 - (NSURLSessionConfiguration*)createURLSessionConfiguration
 {

@@ -39,12 +39,14 @@
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
         [self.ColorView setBackgroundColor:[self colorFromHex:[_memberData objectForKey:@"hexColor"]]];
         
-        [_getData getRibotar:[_memberData objectForKey:@"id"] completionBlock:^(BOOL success,UIImage *image){
-            if (image) {
-                _memberRibotar.image = image;
-                [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-            }
-        }];
+        NSString *filename = [NSString stringWithFormat:@"image_%@.jpg",[_memberData objectForKey:@"id"]];
+        id imageFile = [NSHomeDirectory() stringByAppendingPathComponent:filename];
+        
+        if ([[NSFileManager defaultManager] fileExistsAtPath:imageFile])
+        {
+            self.memberRibotar.image = [UIImage imageWithContentsOfFile:imageFile];
+        }
+        
         
         _memberName.text = [NSString stringWithFormat:@"%@ %@",[_memberData objectForKey:@"firstName"],
                             [_memberData objectForKey:@"lastName"]];
@@ -123,17 +125,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)sendEmail:(id)sender {
     [UIView animateWithDuration:3.0

@@ -161,7 +161,7 @@
 			children = (
 				D53A4E87194EEBD4002F0E75 /* Images */,
 				D5E2F720194C8893008FB5E9 /* Model */,
-				D5E2F71F194C8887008FB5E9 /* Connections */,
+				D5E2F71F194C8887008FB5E9 /* Controllers */,
 				D5E2F71B194C87D1008FB5E9 /* Views */,
 				D5E2F6F2194C8400008FB5E9 /* AppDelegate.h */,
 				D5E2F6F3194C8400008FB5E9 /* AppDelegate.m */,
@@ -215,13 +215,13 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
-		D5E2F71F194C8887008FB5E9 /* Connections */ = {
+		D5E2F71F194C8887008FB5E9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				D5E2F724194C8913008FB5E9 /* GetData.h */,
 				D5E2F725194C8913008FB5E9 /* GetData.m */,
 			);
-			name = Connections;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		D5E2F720194C8893008FB5E9 /* Model */ = {
