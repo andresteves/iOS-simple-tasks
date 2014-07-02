@@ -1,5 +1,3 @@
-Ribot Challenge
-
 Some notes:
 
 Core Data was implemented but not used for persist the data from the API calls unfortunately.
